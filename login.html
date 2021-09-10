@@ -1,0 +1,61 @@
+<HTML>
+ <link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-
+ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+crossorigin="anonymous">
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-
+JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+ <BODY>
+ <?php
+ session_start();
+ $_SESSION['cart']="";
+ ?>
+ <div class="container" style="background-color:#E6D3F2;">
+ <div class="row" style="height: 5%; background-color:#D193F7; padding:40px; backgroundimage: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHw%3D&w=1000&q=8
+0');"">
+ <div class="col-12"></div>
+ </div>
+ <div class="row" style="height: 10%;background-color:#480673; color:#ffffff;">
+ <div class="col-8"><h3><b>RFOS LOGIN</b></h3></div>
+ <div class="col-2"><a href="NewUser.html"><b>Register as New User</b></a></div>
+ </div>
+ <div class="row" style="height: 0%; ">
+ <div class="col-12"></div>
+
+ </div>
+ <span class="align-middle" >
+ <div class="row" style="background-image: url('https://wallpaperaccess.com/full/271679.jpg');
+background-repeat: no-repeat; background-size: cover;"">
+ <div class="col">
+
+ </div>
+
+ <div class="colcol-lg-2" style="background-color:#ffffff; padding:40px; border-color:#230237;
+border-style: solid;border-width: thin;">
+ <form method="POST" Action="SaveUser.php">
+ <div class="form-group">
+ <label for="exampleInputName">Username</label>
+ <input type="string" class="form-control" id="username" name="username" ariadescribedby="emailHelp" placeholder="Enter Your Username">
+ </div>
+ <div class="form-group">
+ <label for="exampleInputPassword1">Password</label>
+ <input type="password" class="form-control" id="exampleInputPassword1"
+placeholder="Enter your Password" name="password">
+ </div>
+ <button type="submit" class="btn btn-primary">Login</button>
+ </form>
+ </div>
+ <div class="col -md-auto">
+
+ </div>
+ </div>
+ </span>
+ <div class="row" style="height: 0%; ">
+ <div class="col-12"></div>
+
+ </div>
+ </div>
+ </BODY>
+ </HTML>
